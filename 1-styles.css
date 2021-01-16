@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+a {
+  color: #ab2b2b;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a:after {
+  display: block;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  width: 0;
+  content: "";
+  background: #ab2b2b;
+  transition: width 0.5s ease 0.2s;
+}
